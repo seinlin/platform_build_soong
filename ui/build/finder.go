@@ -63,7 +63,7 @@ func NewSourceFinder(ctx Context, config Config) (f *finder.Finder) {
 	cacheParams := finder.CacheParams{
 		WorkingDirectory: dir,
 		RootDirs:         []string{"."},
-		ExcludeDirs:      []string{".git", ".repo"},
+		ExcludeDirs:      []string{"gecko", ".git", ".repo"},
 		PruneFiles:       pruneFiles,
 		IncludeFiles: []string{
 			// Kati build definitions.
