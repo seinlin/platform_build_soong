@@ -75,6 +75,8 @@ func GetConfig(name string) PathConfig {
 
 var Configuration = map[string]PathConfig{
 	"bash":    Allowed,
+	"cargo":   Allowed,
+	"cbindgen": Allowed,
 	"dd":      Allowed,
 	"diff":    Allowed,
 	"dlv":     Allowed,
@@ -89,7 +91,12 @@ var Configuration = map[string]PathConfig{
 	"lsof":    Allowed,
 	"openssl": Allowed,
 	"pstree":  Allowed,
+	"repo":    Allowed,
 	"rsync":   Allowed,
+	"rustc":   Allowed,
+	"rustfmt": Allowed,
+	"rustup":  Allowed,
+	"sccache": Allowed,
 	"sh":      Allowed,
 	"stubby":  Allowed,
 	"tr":      Allowed,
